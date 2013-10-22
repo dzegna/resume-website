@@ -1,6 +1,7 @@
 // Make sure the charset is set appropriately
 @charset "UTF-8";
 
+
 // This includes all of the foundation global elements that are needed to work with any of the other files.
 @import "foundation/variables";
 
@@ -42,8 +43,57 @@
   "foundation/components/tooltips",
   "foundation/components/dropdown";
 
-$row-color1: #2ba6cb;
+$lgt:#f7f7f7;
+$drk:#3b3b3b;
+$grn:#4cd964;
+$ong:#FF5E3A;
+$color5:#C6E2FF;
+
+$cursive:'Grand Hotel', cursive;
+$sans:'Lato', sans-serif;
 
 .row-color1 {
-  background-color:$row-color1;
+  background-color:$lgt;
+}
+.row-color2 {
+  background-color:$lgt;
+}
+.row-color3 {
+  background-color:$grn;
+}
+.row-color4 {
+  background-color:$ong;
+}
+.row-color5 {
+  background-color:$color5;
+}
+
+
+.Name {
+  border-top: 10px solid $ong;
+  padding: 0px 0 20px 20px;
+  h1 {
+    color: $drk;
+    line-height: 1em;
+    font-family:$sans;
+    font-weight: 100;
+    letter-spacing: 0.09em;
+    span{font-weight:400;}
+  }
+  h2 {
+    color: $drk;
+    line-height: 1em;
+    font-family:$sans;
+    font-weight: 100;
+    font-size:1.6em;
+  }
+}
+.border {
+  width: 100%;
+  height: 7px;
+  background:url("/img/triangle-border.png") repeat-x;
+}
+.test {
+  background-color:red;
+  height: 40px;
 }
